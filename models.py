@@ -320,7 +320,7 @@ DR4, SE4 = calculate_values(Bandwidth[8], PowerWatts, kb, d) # Channel 2
 plot_data_vs_power(
     PowerDBM, [SE1, SE2, SE3, SE4], 
     ['-ro', '-bo', '-go', "-ko"], 
-    ['Scheme One', 'Scheme Two', 'Scheme Three', "Scheme 4"], 
+    ['Scheme 1', 'Scheme 2', 'Scheme 4', "5G"], 
     'SE (bits/sec/Hz)', 
     'SE (bits/sec/Hz) vs Power (dBm)', 
     9
@@ -331,9 +331,12 @@ plot_data_vs_power(
     PowerDBM, 
     [DR1, DR2, DR3, DR4], 
     ['-ro', '-bo', '-go', "-ko"], 
-    ['Scheme 1', 'Scheme 2', 'Scheme 3', "Scheme 4"], 
+    ['Scheme 1', 'Scheme 2', 'Scheme 3', "5G "], 
     'Data Rate (bps)', 
     'Data Rate vs Power (dBm)', 
     10
 )
+
+print("DR4", DR4)
+print("SE", SE4)
 # ------------------------------------------------------------------------------------------------------------------------------------------------------
